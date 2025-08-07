@@ -16,7 +16,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'  
+          node-version: '20'  # Cambiar la versión de Node.js segun se necesite
 
       - name: Instalar dependencias
         run: npm install
