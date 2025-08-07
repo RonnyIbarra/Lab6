@@ -8,26 +8,27 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest  # <- Necesario para que sepa en qué runner ejecutar
-
+    runs-on: ubuntu-latest
+    
     steps:
       - name: Clonar repositorio
         uses: actions/checkout@v4
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
-        with:  # <- corregido "wuith" por "with"
+        with:
           node-version: '20'
+          cache: 'npm'
 
       - name: Instalar dependencias
         run: npm install
 
-      - name: Lint del código
+      - name: Lint del Código
         run: npm run lint
 
-      - name: Ejecutar las pruebas
+      - name: Ejecutar pruebas
         run: npm test
 
       - name: Simular despliegue
         run: |
-          echo "Despliegue Simulado: La aplicación pasó lint y pruebas correctamente"
+          echo "Despliegue simulado: la aplicación pasó Lint y pruebas correctamente"
