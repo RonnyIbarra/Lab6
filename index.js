@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT;
 
-// Endpoint
+// endpoint
 app.get('/', (_req, res) => {
     res.send('Integración Continua funcionando!');
 });
