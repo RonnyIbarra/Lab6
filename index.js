@@ -1,12 +1,14 @@
+require('dotenv').config();
+
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
-// endpoint
+// endpoint principal
 app.get('/', (_req, res) => {
-    res.send('Integración Continua funcionando!');
+  res.send('Integración Continua funcionando!');
 });
 
-app.listen(PORT, () => { 
-    console.log(`Servidor ejecutandose en el  puerto ${PORT}`); 
+app.listen(PORT, () => {
+  console.log(`Servidor ejecutándose en el puerto ${PORT}`);
 });
