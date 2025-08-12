@@ -5,6 +5,7 @@
   "scripts": {
     "test": "jest",
     "start": "node index.js",
+    "build": "vite build" ,
     "lint": "npx eslint ."
   },
   "keywords": [],
