@@ -1,15 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Despliegue Continuo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil — Clima & Conversión</title>
+  <style>
+    
+    body {
+      font-family: sans-serif;
+      background-color: #f2f6ff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    header, footer {
+      background-color: #003366;
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 1em;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 600px;
+      padding: 1em;
+      text-align: center;
+    }
+    ul {
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
-    <h1>Sitio Estatico</h1>
+  <header>
+    <h1>Perfil — Clima & Conversión</h1>
+  </header>
+
+  <main>
     <h2>Ronny Joel Ibarra Gaona</h2>
-    <p id="out"></p>
-    <script src="app.js"></script>
+    <p><strong>NRC:</strong> 23311</p>
+    <p><strong>Correo:</strong> rjibarra1@espe.edu.ec</p>
     
+    <p>
+      Soy estudiante de Ingeniería de Software apasionado por el desarrollo de paginas web. Me gusta trabajar en equipo, resolver problemas y aprender cosas nuevas.
+    </p>
+
+    <ul>
+      <li>Me gusta mucho el ciclismo</li>
+      <li>Fanático del rock y pop</li>
+      <li>Interés en Inteligencia Artificial</li>
+    </ul>
+  </main>
+
+  <footer>
+    Clima
+  </footer>
 </body>
 </html>
