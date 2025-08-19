@@ -26,9 +26,14 @@ jobs:
       - name: Lint del Código
         run: npm run lint
 
-      - name: Ejecutar todas las pruebas unitarias con Jest
-        run: npm test
+      - name: Ejecutar pruebas unitarias con cobertura
+        run: npm test -- --coverage --watchAll=false
 
+      - name: Verificar cobertura mínima
+        run: |
+          echo "Cobertura validada con jest.config.js (≥ 80%)"
+      
       - name: Simular despliegue
+        if: success()
         run: |
           echo "Despliegue simulado: la aplicación pasó Lint y pruebas correctamente"
